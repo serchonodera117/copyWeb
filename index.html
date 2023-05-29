@@ -4,9 +4,70 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/index.css">
+    <link rel="icon" sizes="192x192" href="">
     <title>copyWeb</title>
 </head>
 <body>
+    <header>
+        <nav class="header">
+            <label for="input-hamburguer-menu" class="label-menu">
+                <svg xlass="menu-btn" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-menu-button-wide" viewBox="0 0 16 16">
+                    <path d="M0 1.5A1.5 1.5 0 0 1 1.5 0h13A1.5 1.5 0 0 1 16 1.5v2A1.5 1.5 0 0 1 14.5 5h-13A1.5 1.5 0 0 1 0 3.5v-2zM1.5 1a.5.5 0 0 0-.5.5v2a.5.5 0 0 0 .5.5h13a.5.5 0 0 0 .5-.5v-2a.5.5 0 0 0-.5-.5h-13z"/>
+                    <path d="M2 2.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5zm10.823.323-.396-.396A.25.25 0 0 1 12.604 2h.792a.25.25 0 0 1 .177.427l-.396.396a.25.25 0 0 1-.354 0zM0 8a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V8zm1 3v2a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2H1zm14-1V8a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2h14zM2 8.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0 4a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5z"/>
+                  </svg>
+            </label>
+            <input id="input-hamburguer-menu" type="checkbox" style="display: none">
+          <div class="container-menu">
+            <ul class="nav-menu" >
+                <li>
+                    <button>
+                        Option 1
+                    </button>
+                </li>
+                <li>
+                    <button>
+                        Option 2
+                    </button>
+                </li>
+            </ul>
+        </div>
+        </nav>
+    </header>
     
+    <div class="body-container">
+        <div class="col-left">
+            <div class="content-left">
+                <div class="content-card">
+                    <br>
+                    <ul class="menu-options">
+                        <li>
+                            <label for="o1">Cards</label>
+                            <input id="o1"type="radio" name="op">
+                        </li>
+                        <li>
+                            <label for="o2">Menus</label>
+                            <input id="o2"type="radio" name="op">
+                        </li>
+                        <li>
+                            <label for="o3">Buttoms</label>
+                            <input id="o3"type="radio" name="op">
+                        </li>
+                        <li>
+                            <label for="o4">Images</label>
+                            <input id="o4"type="radio" name="op">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-right">
+            <div class="content-right">
+                <div class="content-card">
+                    <iframe src="pages/cards.html" frameborder="0" class="pages"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
