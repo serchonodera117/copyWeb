@@ -4,6 +4,8 @@
     --card-width: 300px;
     --card-height: 300px;
     --btn-color-blue: rgb(80, 44, 238);
+    --title-color:rgba(56, 32, 32, 0.6);
+    --line-color: rgba(122, 52, 80, 0.927);
 }
 
 *{
@@ -11,7 +13,19 @@
 }
 .item{
     display: block;
-}.css-editor{
+}
+.title-item{
+    text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: var(--title-color);
+}
+.custom-line{
+    border: 3px solid;
+    color: var(--line-color);
+    border-radius: 50% 50% 50% 50%;
+    
+}
+.css-editor{
     display: block;
     background-color: var(--color-css-editor);
     padding: 10px;
