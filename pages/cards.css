@@ -1,10 +1,18 @@
 :root{
     --color-css-editor: rgb(221, 220, 233);
     --color-html: rgb(214, 227, 255);
+    --card-width: 300px;
+    --card-height: 300px;
+    --btn-color-blue: rgb(80, 44, 238);
+}
+
+*{
+    margin:0;
 }
 .item{
     display: block;
 }.css-editor{
+    display: block;
     background-color: var(--color-css-editor);
     padding: 10px;
     border-radius: 10px;
@@ -20,3 +28,84 @@
     font-size: 20px;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+/*CARDS-----------------------------------------------------------------------------------------------------------------------------------------------*/
+/*Card with hover zoom image-----------------------------------------------------*/
+
+
+body{
+    padding: 10px;
+}
+.card-body{
+    width: var(--card-width);
+    height: var(--card-height);
+    box-shadow: 0 2px 7px 4px rgba(152, 110, 110, 0.6);
+    border-radius: 10px;
+    background-color: white;
+
+}
+.image-container{
+    width: var(--card-width);
+    height: 215px;
+    overflow: hidden;
+    border-radius: 10px 10px 0px 0px;
+}.text-img-container p{
+    margin-left:10px;
+    margin-right:10px;
+    margin-top:20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.img-card{
+    width: 100%;
+    min-height: 215px;
+    object-fit: cover;
+    transition: 0.3s ease-in;
+}
+.text-img-container{
+    color: aliceblue;
+    transition: 0.3s ease-in;
+    z-index: 1;
+    width: var(--card-width) ;
+    height: 215px;
+    position: absolute;
+    border-radius: 10px 10px 0px 0px;
+    backdrop-filter: blur(3px);
+    background-color: rgba(9, 3, 46, 0.7);
+    opacity: 0;
+}
+.card-body:hover .img-card{
+    scale: 1.2;
+}
+.card-body:hover .text-img-container{
+    opacity: 1;
+}
+.group{
+    padding: 0px 10px 0px 10px;
+    display: block;
+}
+
+.group button{
+    color: white;
+    border: 1px solid;
+    padding: 5px 5px 5px 5px;
+    text-align: center;
+    border-radius: 10px;
+    width: 90px;
+    height: 30px;
+    background-color: var(--btn-color-blue);
+    transition: 0.3s ease-in;
+    float: right;
+    margin-top: 10px;
+    
+}
+.group button:hover{
+    background-color:  rgb(127, 102, 240);
+}
+.group p{
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 5px;
+    font-family: 'Courier New', Courier, monospace;
+}
+/*Animated card---------------------------------------------------------------*/
