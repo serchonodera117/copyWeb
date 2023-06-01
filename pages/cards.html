@@ -154,6 +154,138 @@
                 font-family: 'Courier New', Courier, monospace;
             }
         </xmp>
+        <br><br>
+
+        <!-- ANIMATED BORDERS -->
+        <h1 class="title-item">Animated rgb borders</h1>
+        <hr class="custom-line">
+        <br>
+    
+        <div class="row-animated-cards">
+            <div class="animated-card">
+                <p class="text-layout color-for-clar">
+                    Your content
+                </p>
+            </div>
+
+        <div>
+            <div class="amimated-card-dark">
+                <p class="text-layout color-for-dark">
+                    Your content
+                </p>
+            </div>
+        </div>
+        </div>
+
+        <br>
+        <spam class="text">HTML</spam>
+        <hr>
+        <br>
+         <xmp class="html-editor" contenteditable style="display: block;">
+            <div class="row-animated-cards">
+                <div class="animated-card">
+                    <p class="text-layout color-for-clar">
+                        Your content
+                    </p>
+                </div>
+    
+            <div>
+                <div class="amimated-card-dark">
+                    <p class="text-layout color-for-dark">
+                        Your content
+                    </p>
+                </div>
+            </div>
+            </div>
+        </xmp>
+        <br>
+        <spam class="text">CSS CODE</spam>
+        <hr>
+        <br>
+        <xmp  class="css-editor" contenteditable>
+            :root{  
+                --animated-card-white: white;
+                --animated-card-dark: rgb(69, 54, 64);
+            }
+            
+            .text-layout {
+                text-align: center;
+                font-size: 32px;
+                margin-top: 55%;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            }.color-for-clar{
+                color: rgb(100, 97, 111);
+            }.color-for-dark{
+                color: rgb(249, 249, 251);
+            }
+            .row-animated-cards{
+                display: flex;
+            }.dark-container{
+                background-color: black;
+            }
+            
+            
+            .animated-card{
+                width: 250px;
+                height: 370px;
+                border: 2px solid rgba(158, 145, 255, 0.434);
+                margin: 2rem;
+                position: relative;
+                background-color: var(--animated-card-white);
+            }
+            .animated-card::before{
+                content: "";
+                position: absolute;
+                top:-5px;
+                left: -5px;
+                z-index: -1;
+                width: 107%;
+                height: 107%;
+                background: linear-gradient(45deg,
+                red, blue, rgba(235, 235, 217, 0.641),
+                rgb(171, 135, 204), blue, rgba(214, 214, 198, 0.772));
+                background-size: 800%;
+                border: 0px;
+                filter: blur(8px);
+                animation: brillo 20s linear infinite;
+            }
+            
+            .amimated-card-dark{
+                width: 250px;
+                height: 370px;
+                border: 2px solid rgba(244, 255, 145, 0.434);
+                margin: 2rem;
+                position: relative;
+                background-color: var(--animated-card-dark);
+            }.amimated-card-dark::before{
+                    content: "";
+                position: absolute;
+                top:-5px;
+                left: -5px;
+                z-index: -1;
+                width: 107%;
+                height: 107%;
+                background: linear-gradient(45deg,
+                rgb(255, 255, 255), rgb(92, 56, 31), rgba(255, 255, 22, 0.641),
+                rgb(255, 255, 255), rgb(73, 66, 8), rgba(255, 255, 44, 0.772));
+                background-size: 800%;
+                border: 0px;
+                filter: blur(8px);
+                animation: brillo 20s linear infinite;
+            }
+            
+            /*animación*/
+            @keyframes brillo{
+                0%{
+                    background-position: 0 0;
+                }50%{
+                    background-position: 400% 0;
+                    
+                }100%{
+                    background-position: 0 0;
+                }
+            }
+        </xmp>
     </div>
 
 </body>
