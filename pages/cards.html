@@ -39,28 +39,28 @@
         <hr>
         <br>
          <xmp class="html-editor" contenteditable style="display: block;">
-                <div class="card-body">
-                    <div class="text-img-container">
-                        <p>
-                            Gisselle's Adventure is a serious 
-                            videogame about social anxiety 
-                            that illustrates the feelings of
-                            a young girl that has this problem.
-                            so the story is telling from Gisselle's 
-                            perspective.
-                        </p>
-                    </div>
-                    <div class="image-container">
-                        <img class="img-card" src="https://img.itch.zone/aW1nLzExMjY5MjY5LnBuZw==/original/Z2ynnw.png" alt="g" >
-                    </div>
-                    <p></p>
-                    <div class="group">
-                        <p>
-                        Gisselle's Adventure 
-                        </p>
-                        <button>Play</button>
-                    </div>
-                </div>
+<div class="card-body">
+    <div class="text-img-container">
+        <p>
+            Gisselle's Adventure is a serious 
+            videogame about social anxiety 
+            that illustrates the feelings of
+            a young girl that has this problem.
+            so the story is telling from Gisselle's 
+            perspective.
+        </p>
+    </div>
+    <div class="image-container">
+        <img class="img-card" src="https://img.itch.zone/aW1nLzExMjY5MjY5LnBuZw==/original/Z2ynnw.png" alt="g" >
+    </div>
+    <p></p>
+    <div class="group">
+        <p>
+        Gisselle's Adventure 
+        </p>
+        <button>Play</button>
+    </div>
+</div>
             </xmp>
          <br>
         <br>
@@ -68,91 +68,91 @@
         <hr>
         <br>
         <xmp  class="css-editor" contenteditable>
-            :root{
-                --card-width: 300px;
-                --card-height: 300px;
-                --btn-color-blue: rgb(80, 44, 238);
-            }
-            *{
-                margin:0;
-            }
+:root{
+    --card-width: 300px;
+    --card-height: 300px;
+    --btn-color-blue: rgb(80, 44, 238);
+}
+*{
+    margin:0;
+}
+
+body{
+    padding: 10px;
+}
+.card-body{
+    width: var(--card-width);
+    height: var(--card-height);
+    box-shadow: 0 2px 7px 4px rgba(152, 110, 110, 0.6);
+    border-radius: 10px;
+    background-color: white;
+
+}
+.image-container{
+    width: var(--card-width);
+    height: 215px;
+    overflow: hidden;
+    border-radius: 10px 10px 0px 0px;
+}.text-img-container p{
+    margin-left:10px;
+    margin-right:10px;
+    margin-top:20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.img-card{
+    width: 100%;
+    min-height: 215px;
+    object-fit: cover;
+    transition: 0.3s ease-in;
+}
+.text-img-container{
+    color: aliceblue;
+    transition: 0.3s ease-in;
+    z-index: 1;
+    width: var(--card-width) ;
+    height: 215px;
+    position: absolute;
+    border-radius: 10px 10px 0px 0px;
+    backdrop-filter: blur(3px);
+    background-color: rgba(9, 3, 46, 0.7);
+    opacity: 0;
+}
+.card-body:hover .img-card{
+    scale: 1.2;
+}
+.card-body:hover .text-img-container{
+    opacity: 1;
+}
+.group{
+    padding: 0px 10px 0px 10px;
+    display: block;
+}
+
+.group button{
+    color: white;
+    border: 1px solid;
+    padding: 5px 5px 5px 5px;
+    text-align: center;
+    border-radius: 10px;
+    width: 90px;
+    height: 30px;
+    background-color: var(--btn-color-blue);
+    transition: 0.3s ease-in;
+    float: right;
+    margin-top: 10px;
     
-            body{
-                padding: 10px;
-            }
-            .card-body{
-                width: var(--card-width);
-                height: var(--card-height);
-                box-shadow: 0 2px 7px 4px rgba(152, 110, 110, 0.6);
-                border-radius: 10px;
-                background-color: white;
-    
-            }
-            .image-container{
-                width: var(--card-width);
-                height: 215px;
-                overflow: hidden;
-                border-radius: 10px 10px 0px 0px;
-            }.text-img-container p{
-                margin-left:10px;
-                margin-right:10px;
-                margin-top:20px;
-                margin-bottom: 20px;
-                text-align: center;
-            }
-            .img-card{
-                width: 100%;
-                min-height: 215px;
-                object-fit: cover;
-                transition: 0.3s ease-in;
-            }
-            .text-img-container{
-                color: aliceblue;
-                transition: 0.3s ease-in;
-                z-index: 1;
-                width: var(--card-width) ;
-                height: 215px;
-                position: absolute;
-                border-radius: 10px 10px 0px 0px;
-                backdrop-filter: blur(3px);
-                background-color: rgba(9, 3, 46, 0.7);
-                opacity: 0;
-            }
-            .card-body:hover .img-card{
-                scale: 1.2;
-            }
-            .card-body:hover .text-img-container{
-                opacity: 1;
-            }
-            .group{
-                padding: 0px 10px 0px 10px;
-                display: block;
-            }
-    
-            .group button{
-                color: white;
-                border: 1px solid;
-                padding: 5px 5px 5px 5px;
-                text-align: center;
-                border-radius: 10px;
-                width: 90px;
-                height: 30px;
-                background-color: var(--btn-color-blue);
-                transition: 0.3s ease-in;
-                float: right;
-                margin-top: 10px;
-                
-            }
-            .group button:hover{
-                background-color:  rgb(127, 102, 240);
-            }
-            .group p{
-                text-align: center;
-                font-weight: bold;
-                font-size: 18px;
-                margin-top: 5px;
-                font-family: 'Courier New', Courier, monospace;
-            }
+}
+.group button:hover{
+    background-color:  rgb(127, 102, 240);
+}
+.group p{
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 5px;
+    font-family: 'Courier New', Courier, monospace;
+}
         </xmp>
         <br><br>
 
@@ -181,110 +181,115 @@
         <spam class="text">HTML</spam>
         <hr>
         <br>
-         <xmp class="html-editor" contenteditable style="display: block;">
-            <div class="row-animated-cards">
-                <div class="animated-card">
-                    <p class="text-layout color-for-clar">
-                        Your content
-                    </p>
-                </div>
-    
-            <div>
-                <div class="amimated-card-dark">
-                    <p class="text-layout color-for-dark">
-                        Your content
-                    </p>
-                </div>
-            </div>
-            </div>
-        </xmp>
+        <details>
+            <summary> 
+            <xmp class="html-editor" contenteditable>
+    <div class="row-animated-cards">
+        <div class="animated-card">
+            <p class="text-layout color-for-clar">
+                Your content
+            </p>
+        </div>
+
+    <div>
+        <div class="amimated-card-dark">
+            <p class="text-layout color-for-dark">
+                Your content
+            </p>
+        </div>
+    </div>
+    </div>
+            </xmp>
+        </summary>
+        </details>
+
         <br>
         <spam class="text">CSS CODE</spam>
         <hr>
         <br>
         <xmp  class="css-editor" contenteditable>
-            :root{  
-                --animated-card-white: white;
-                --animated-card-dark: rgb(69, 54, 64);
-            }
-            
-            .text-layout {
-                text-align: center;
-                font-size: 32px;
-                margin-top: 55%;
-                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-            }.color-for-clar{
-                color: rgb(100, 97, 111);
-            }.color-for-dark{
-                color: rgb(249, 249, 251);
-            }
-            .row-animated-cards{
-                display: flex;
-            }.dark-container{
-                background-color: black;
-            }
-            
-            
-            .animated-card{
-                width: 250px;
-                height: 370px;
-                border: 2px solid rgba(158, 145, 255, 0.434);
-                margin: 2rem;
-                position: relative;
-                background-color: var(--animated-card-white);
-            }
-            .animated-card::before{
-                content: "";
-                position: absolute;
-                top:-5px;
-                left: -5px;
-                z-index: -1;
-                width: 107%;
-                height: 107%;
-                background: linear-gradient(45deg,
-                red, blue, rgba(235, 235, 217, 0.641),
-                rgb(171, 135, 204), blue, rgba(214, 214, 198, 0.772));
-                background-size: 800%;
-                border: 0px;
-                filter: blur(8px);
-                animation: brillo 20s linear infinite;
-            }
-            
-            .amimated-card-dark{
-                width: 250px;
-                height: 370px;
-                border: 2px solid rgba(244, 255, 145, 0.434);
-                margin: 2rem;
-                position: relative;
-                background-color: var(--animated-card-dark);
-            }.amimated-card-dark::before{
-                    content: "";
-                position: absolute;
-                top:-5px;
-                left: -5px;
-                z-index: -1;
-                width: 107%;
-                height: 107%;
-                background: linear-gradient(45deg,
-                rgb(255, 255, 255), rgb(92, 56, 31), rgba(255, 255, 22, 0.641),
-                rgb(255, 255, 255), rgb(73, 66, 8), rgba(255, 255, 44, 0.772));
-                background-size: 800%;
-                border: 0px;
-                filter: blur(8px);
-                animation: brillo 20s linear infinite;
-            }
-            
-            /*animación*/
-            @keyframes brillo{
-                0%{
-                    background-position: 0 0;
-                }50%{
-                    background-position: 400% 0;
-                    
-                }100%{
-                    background-position: 0 0;
-                }
-            }
+:root{  
+    --animated-card-white: white;
+    --animated-card-dark: rgb(69, 54, 64);
+}
+
+.text-layout {
+    text-align: center;
+    font-size: 32px;
+    margin-top: 55%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}.color-for-clar{
+    color: rgb(100, 97, 111);
+}.color-for-dark{
+    color: rgb(249, 249, 251);
+}
+.row-animated-cards{
+    display: flex;
+}.dark-container{
+    background-color: black;
+}
+
+
+.animated-card{
+    width: 250px;
+    height: 370px;
+    border: 2px solid rgba(158, 145, 255, 0.434);
+    margin: 2rem;
+    position: relative;
+    background-color: var(--animated-card-white);
+}
+.animated-card::before{
+    content: "";
+    position: absolute;
+    top:-5px;
+    left: -5px;
+    z-index: -1;
+    width: 107%;
+    height: 107%;
+    background: linear-gradient(45deg,
+    red, blue, rgba(235, 235, 217, 0.641),
+    rgb(171, 135, 204), blue, rgba(214, 214, 198, 0.772));
+    background-size: 800%;
+    border: 0px;
+    filter: blur(8px);
+    animation: brillo 20s linear infinite;
+}
+
+.amimated-card-dark{
+    width: 250px;
+    height: 370px;
+    border: 2px solid rgba(244, 255, 145, 0.434);
+    margin: 2rem;
+    position: relative;
+    background-color: var(--animated-card-dark);
+}.amimated-card-dark::before{
+        content: "";
+    position: absolute;
+    top:-5px;
+    left: -5px;
+    z-index: -1;
+    width: 107%;
+    height: 107%;
+    background: linear-gradient(45deg,
+    rgb(255, 255, 255), rgb(92, 56, 31), rgba(255, 255, 22, 0.641),
+    rgb(255, 255, 255), rgb(73, 66, 8), rgba(255, 255, 44, 0.772));
+    background-size: 800%;
+    border: 0px;
+    filter: blur(8px);
+    animation: brillo 20s linear infinite;
+}
+
+/*animación*/
+@keyframes brillo{
+    0%{
+        background-position: 0 0;
+    }50%{
+        background-position: 400% 0;
+        
+    }100%{
+        background-position: 0 0;
+    }
+}
         </xmp>
     </div>
 
