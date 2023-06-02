@@ -1,8 +1,7 @@
 let App = {
    data(){
         return {
-            myVar:  "div-page",
-
+            isTabLeftMenuVisible: false,
         }
    }
 };
