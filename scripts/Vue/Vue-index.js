@@ -1,7 +1,7 @@
 let App = {
    data(){
         return {
-            isTabLeftMenuVisible: false,
+            isTabLeftMenuVisible: true,
         }
    }
 };
