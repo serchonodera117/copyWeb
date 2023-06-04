@@ -43,6 +43,8 @@
 }
 .html-editor{
     transition: 0.3s ease-in;
+    overflow-y: scroll;
+    height: var(--editors-height);
     background-color: var(--color-html);
     padding: 10px;
     border-radius: 10px;
@@ -60,7 +62,8 @@
     display: none;
 }
 /*Buttoms to show and hide containers----------------------------------------------------*/
-.group-editors:has(input[type="checkbox"]:checked) .css-editor{
+.group-editors:has(input[type="checkbox"]:checked) .css-editor, 
+.group-editors:has(input[type="checkbox"]:checked) .html-editor{
     opacity: 0;
     visibility: hidden;
     height: 0;
