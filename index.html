@@ -57,34 +57,26 @@
                     <br>
                     <ul class="menu-options">
                         <li>
-                            <label for="o1">
-                                <a class="link-iframe" href="pages/cards.html" target="iframe-pages">
+                            <label for="o1" @click="changeIframe('o1')">
                                     Cards
-                                </a>
                             </label>
                             <input id="o1"type="radio" value="0"  name="op">
                         </li>
                         <li>
-                            <label for="o2">
-                                <a class="link-iframe" href="pages/menus.html" target="iframe-pages">
+                            <label for="o2" @click="changeIframe('o2')">
                                     Menus
-                                </a>
                             </label>
                             <input id="o2"type="radio" value="1"  name="op">
                         </li>
                         <li>
-                            <label for="o3">
-                                <a class="link-iframe" href="pages/cards.html" target="iframe-pages">
+                            <label for="o3" @click="changeIframe('o3')">
                                     Buttons
-                                </a>
                             </label>
                             <input id="o3"type="radio" value="2" name="op">
                         </li>
                         <li>
-                            <label for="o4">
-                                <a class="link-iframe" href="pages/cards.html" target="iframe-pages">
+                            <label for="o4" @click="changeIframe('o4')">
                                     Images
-                                </a>
                             </label>
                             <input id="o4"type="radio" value="3" name="op">
                         </li>
@@ -95,14 +87,13 @@
         <div class="col-right">
             <div class="content-right">
                 <div class="content-card">
-                    <iframe name="iframe-pages" src="pages/cards.html" frameborder="0" class="pages"></iframe>
+                    <iframe id="iframe-pages" src="pages/cards.html" frameborder="0" class="pages"></iframe>
                 </div>
             </div>
         </div>
     </div>
 </div>
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
-    <script src="scripts/vanilla_js/menu_controller.js"></script>
     <script src="scripts/Vue/Vue-index.js"></script>
 </body>
 </html>
