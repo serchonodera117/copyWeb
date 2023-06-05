@@ -226,11 +226,11 @@ body{
     background-size: 800%;
     border: 0px;
     filter: blur(8px);
-    animation: brillo 20s linear infinite;
+    animation: shine 20s linear infinite;
 }
 
-/*animación*/
-@keyframes brillo{
+/*animation*/
+@keyframes shine{
     0%{
         background-position: 0 0;
     }50%{
